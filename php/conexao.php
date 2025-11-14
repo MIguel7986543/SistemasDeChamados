@@ -1,33 +1,15 @@
 <?php
-//Recendo os dados do formulario
-$nome = $_POST['nome'];
-$email = $_POST['email'];
-$senha = $_POST['senha'];
-$confirmarSenha = $_POST['confirmarSenha'];
-$celular = $_POST['celular'];
-$setor = $_POST['setor'];
 
+$server = "localhost",
+$user = "root";
+$password = "admin";
+$database = "db_sistema_chamado.sql"
 
-//incluir o arquivo de conexão
-include 'conexao.php';
+$conexao = new mysql($server, $user, $password, $database);
 
+if ($conexao == false) {
+    echo "falha na conexão"
 
-//instrução sql para inserir os dados
-$insert = "INSERT INTO tb_usuario VALUE (null, '$nome', 
-'$email ', '$senha','$celular','$setor')";
-
-
-//executar a instrução sql dentro do banco utilizando a 
-// função query()
-
-
-$query = $conexao->query($insert);
-
-
-if ($query == true) {
-    echo "<script> alert('Usuario cadastrado sucesso!');
-     window.location.href = '../index.html' </script>";
 }
-
 
 ?>
