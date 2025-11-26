@@ -3,7 +3,7 @@
 $nome = $_POST['nome'];
 $email = $_POST['email'];
 $senha = $_POST['senha'];
-$confirmarSenha = $_POST['confirmarSenha'];
+$confirmarSenha = $_POST['confirmar'];
 $celular = $_POST['celular'];
 $setor = $_POST['setor'];
 
@@ -14,7 +14,7 @@ include 'conexao.php';
 
 
 $insert = "INSERT INTO tb_usuario VALUE (null, '$nome', 
-'$email ', '$senha','$celular','$setor')";
+'$email', '$senha','$celular','$setor')";
 
 
 

@@ -1,14 +1,14 @@
 <?php
 
-$server = "localhost",
+$server = "localhost";
 $user = "root";
 $password = "admin";
-$database = "db_sistema_chamado.sql"
+$database = "db_sistema_chamado";
 
-$conexao = new mysql($server, $user, $password, $database);
+$conexao = new MySqli($server, $user, $password, $database);
 
 if ($conexao == false) {
-    echo "falha na conexão"
+    echo "falha na conexão";
 
 }
 

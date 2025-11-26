@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #2b132b;
+    background-color: #21327a;
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
@@ -27,16 +27,16 @@ body {
 }
 
 .login-box {
-    background-color: #4a344a;
+    background-color: #352897;
     padding: 60px 80px;
     border-radius: 35px;
     text-align: center;
     width: 500px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 20px rgba(31, 21, 21, 0.3);
 }
 
 .titulo {
-    font-family: 'Monoton', cursive;
+    
     font-size: 80px;
     color: #f0f0f0;
     text-align: center;
@@ -58,13 +58,13 @@ input {
     padding: 12px 20px;
     border: none;
     border-radius: 25px;
-    background-color: #b4a8b4;
+    background-color: #a8aab4;
     outline: none;
     font-size: 1rem;
 }
 
 .btn-entrar {
-    background-color: #5a215a;
+    background-color: #241f6c;
     color: white;
     border: none;
     border-radius: 25px;
@@ -76,12 +76,10 @@ input {
 }
 
 .btn-entrar:hover {
-    background-color: #752a75;
+    background-color: #392a75;
 }
 
-/* ==============================
-   LINK "CADASTRE-SE"
-   ============================== */
+
 .cadastro {
     margin-top: 25px;
 }
@@ -103,7 +101,7 @@ input {
     margin-top: 15px;
     color: #fff;
     text-decoration: none;
-    background-color: #5a215a;
+    background-color: #361a78;
     padding: 10px 20px;
     border-radius: 15px;
     font-size: 14px;
@@ -112,5 +110,5 @@ input {
 }
 
 .botao-cadastro:hover {
-    background-color: #8a2c7b;
+    background-color: #1b3196;
 }
