@@ -16,4 +16,20 @@ print_r($resultado);
 
 
 
+  $email_bd = $resultado ['email'];
+    $senha_bd = $resultado ['senha'];
+ 
+    if($email == $email_bd && $senha == $senha_bd) {
+        session_start();
+        $SESSION['id_usuario'] = $resutado ['id'];
+        header('location: ../casa.php');
+ 
+       
+    } else {
+        
+        echo "<script> alert('Usuario ou senha invalida!'); history.back() </script>";
+       
+    }
+
+
 ?>
