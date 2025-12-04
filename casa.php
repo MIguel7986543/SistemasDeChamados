@@ -11,12 +11,17 @@
 
     <nav class="menu-lateral">
         <ul>
-            <li>Casa</li>
+
+            <li><a href="casas.php">Casa</a></li>
             <li><a href="chamado.php">Criar um chamado</a></li>
-            <li>Chamados</li>
+            <li><a href="meuschamados.php">Meus Chamados</a></li>
+            
+
             <li>Reservas</li>
-            <li>FAQ</li>
+
+
         </ul>
+
     </nav>
 
     <main class="conteudo">

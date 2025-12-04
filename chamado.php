@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Criar Chamado</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/chamado.css">
+  <link rel="stylesheet" href="php/chamado.php">
 </head>
 <body>
   <div class="container py-4">
     <header class="d-flex align-items-center mb-3">
       <div class="logo d-flex align-items-center gap-2 text-white me-auto">
-        <h3 class="m-0">Você entrou!</h3>
+        <h3 class="m-0">Tente mais tarde!</h3>
         <div class="avatar-icon-small d-flex justify-content-center align-items-center bg-black rounded-circle">
           <svg width="24" height="24" fill="white" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
             <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
@@ -23,7 +23,7 @@
       session_start();
       if (isset($_SESSION['id_usuario'])) {
         $nome_usuarios = $_SESSION['nm_usuario'];
-        echo "Boa ". $nome_usuarios;
+        echo "Boa". $nome_usuarios;
  
  
       }else {
@@ -55,11 +55,13 @@
             include 'php/conexao.php';
             $select = "SELECT * FROM tb_tipo";
             $query = $conexao-> query($select);
-            while ($resultado = $query->fetch_assoc()){?>
+            while ($resultado = $query->fetch_assoc()){
+              
+      ?>
  
             <option value="id_tipo"><?php echo $resultado['nm_tipo'] ?></option>
  
-            <?php }?>
+      <?php }?>
  
  
           </select>
@@ -120,7 +122,8 @@
     </form>
   </div>
   </nav>
- 
+
+
  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
